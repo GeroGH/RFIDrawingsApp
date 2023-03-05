@@ -154,6 +154,7 @@ namespace RFIDrawingsApp
             dh.GetActiveDrawing().CommitChanges();
             this.LabeUpdate("Adding part marks, complete !!!", System.Drawing.Color.Black);
         }
+
         private static TSD.DrawingColors SetColor(string combined)
         {
             var color = TSD.DrawingColors.Black;
@@ -177,6 +178,7 @@ namespace RFIDrawingsApp
 
             return color;
         }
+
         private void LabeUpdate(string text, System.Drawing.Color color)
         {
             this.Label.Text = text;
@@ -191,5 +193,7 @@ namespace RFIDrawingsApp
                 return;
             }
         }
+
+        // Test Upload
     }
 }
