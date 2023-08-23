@@ -104,7 +104,7 @@ namespace RFIDrawingsApp
             dos.UnselectAllObjects();
             dos.SelectObjects(new ArrayList(parts), true);
 
-            var builder = new MacroBuilder();
+            var builder = new Tekla.Structures.MacroBuilder();
             builder.Callback("acmdCreateAppliedMarksSelected", "", "main_frame");
             builder.Run();
             MacroBuilder.WaitForMacroToRun();
